@@ -2,15 +2,16 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import Hero from '@/sections/hero'
+import AppCTA from '@/sections/home/app_cta'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={`flex w-full min-h-screen flex-col items-center bg-monza-100 ` + inter.className}>
+    <main className={`flex w-full min-h-screen flex-col items-center bg-gray-50 ` + inter.className}>
       <Navbar path="/" />
       <Hero />
-      
+      <AppCTA />
     </main>    
   )
 }
