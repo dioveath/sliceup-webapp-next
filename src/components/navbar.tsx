@@ -29,7 +29,7 @@ const links = [
   //   type: NavItemType.LINK,
   // },
   {
-    href: "/login",
+    href: "/owner_login",
     label: "Login",
     type: NavItemType.BUTTON,
   },

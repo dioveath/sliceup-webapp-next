@@ -2,7 +2,7 @@ export default function AppCTA() {
   console.log("AppCTA");
 
   return (
-    <section className="max-w-screen-xl w-full p-4 md:relative">
+    <section className="max-w-screen-xl w-full p-4 md:relative min-h-[350px]">
       <div className="md:absolute md:left-0 md:right-0 md:p-4 md:-top-20 w-full grid grid-cols-1 md:grid-cols-12 gap-10">
         <div className="col-span-1 md:col-span-5 h-[300px] overflow-clip">
             <img src="https://github.com/dioveath/ti-ext-order-manager-live/blob/main/assets/ss1.jpg?raw=true" />

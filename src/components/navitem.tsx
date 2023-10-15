@@ -30,9 +30,9 @@ export default function NavItem({ item, active }: NavItemProps) {
   } else {
     return (
         <li>
-          <button className="block ml-4 md:ml-0 py-2 px-4 rounded-lg bg-monza-600 text-white hover:bg-monza-700">
+          <a href={href} className="block ml-4 md:ml-0 py-2 px-4 rounded-lg bg-monza-600 text-white hover:bg-monza-700">
             {label}
-          </button>          
+          </a>          
         </li>
     )
   }  
