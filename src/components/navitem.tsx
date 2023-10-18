@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type NavItemProps = {
   item: NavItem;
   active: boolean;
@@ -22,17 +24,17 @@ export default function NavItem({ item, active }: NavItemProps) {
   if(type === NavItemType.LINK) {
   return (
     <li>
-      <a href={href} className={`block py-2 px-4 rounded-lg ${active ? "bg-monza-600 text-white" : "text-monza-500 hover:bg-monza-100 hover:text-monza-600"}`}>
+      <Link href={href} className={`block py-2 px-4 rounded-lg ${active ? "bg-monza-600 text-white" : "text-monza-500 hover:bg-monza-100 hover:text-monza-600"}`}>
         {label}
-      </a>
+      </Link>
     </li>
   );
   } else {
     return (
         <li>
-          <a href={href} className="block ml-4 md:ml-0 py-2 px-4 rounded-lg bg-monza-600 text-white hover:bg-monza-700">
+          <Link href={href} className="block ml-4 md:ml-0 py-2 px-4 rounded-lg bg-monza-600 text-white hover:bg-monza-700">
             {label}
-          </a>          
+          </Link>          
         </li>
     )
   }  

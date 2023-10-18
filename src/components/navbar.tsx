@@ -42,8 +42,6 @@ export default function Navbar({ path }: NavbarProps) {
     setNavbarOpen(!navbarOpen);
   };
 
-  console.log(navbarOpen);
-
   return (
     <nav className="w-full bg-transparent">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

@@ -1,6 +1,10 @@
-export default function Footer() {
+type FooterProps = {
+  className?: string;
+};
+
+export default function Footer({ className }: FooterProps) {
   return (
-    <footer className="w-full bg-monza-600">
+    <footer className={`w-full bg-monza-600 ${className}`}>
       <div className="max-w-screen-xl mx-auto px-4 py-14 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-12 min-h-[400px] gap-10">
         <div className="col-span-3">
           <div className="flex flex-col gap-2 w-full">

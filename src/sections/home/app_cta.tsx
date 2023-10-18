@@ -1,5 +1,4 @@
 export default function AppCTA() {
-  console.log("AppCTA");
 
   return (
     <section className="max-w-screen-xl w-full p-4 md:relative min-h-[350px]">
