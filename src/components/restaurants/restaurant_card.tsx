@@ -28,7 +28,7 @@ export default function RestaurantCard() {
               <span> $10 Min </span>
             </p>
 
-            <div className="w-full flex items-center gap-1 order-3 lg:order-2">
+            <div className="w-full flex items-start gap-1 order-3 lg:order-2">
               <BookmarkSVG className="w-4 h-4 text-monza-600" />
               <p className="text-sm text-green-500 font-bold">20% off up to $10 on orders above $30</p>
             </div>

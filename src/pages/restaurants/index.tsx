@@ -3,7 +3,7 @@ import Dropdown, { DropdownItem } from "@/components/dropdown";
 import RestaurantCard from "@/components/restaurants/restaurant_card";
 import RestaurantRequestCard from "@/components/restaurants/restaurant_request_card";
 import Footer from "@/sections/footer";
-import { Inter } from "next/font/google";
+import { Gabarito, Inter } from "next/font/google";
 
 const items = [
   {
@@ -23,17 +23,17 @@ const items = [
   },
 ];
 
-const inter = Inter({ subsets: ["latin"] });
+const gabarito = Gabarito({ subsets: ["latin"] });
 
-export default function RestaurantsPage() {
+export default function RestaurantsListPage() {
   return (
     <>
-      <main className={`flex w-full min-h-screen flex-col items-center p-12 bg-gray-100 ` + inter.className}>
+      <main className={`flex w-full min-h-screen flex-col items-center p-2 lg:px-12 bg-gray-100 ` + gabarito.className}>
         <nav className="w-full bg-transparent flex justify-between">
           <div className="flex items-center">
-            <a href="#" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <img src="https://sliceup.pizza/assets/media/uploads/logo%203.png" className="h-8 mr-3" alt="Sliceup Logo" />
-            </a>
+            </Link>
             <Dropdown items={items} />
           </div>
           <div className="flex items-center">
@@ -46,7 +46,7 @@ export default function RestaurantsPage() {
           <button className="font-bold bg-monza-600 text-white rounded-sm px-4 py-2 w-full">Search</button>
         </div>
 
-        <div className="w-full h-full flex flex-col px-40 ">
+        <div className="w-full h-full flex flex-col px-2 lg:px-40 ">
 
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="col-span-1"></div>
@@ -81,7 +81,7 @@ export default function RestaurantsPage() {
         </div>
 
       </main>
-      <Footer className={`${inter.className}`} />
+      <Footer className={`${gabarito.className}`} />
     </>
   );
 }

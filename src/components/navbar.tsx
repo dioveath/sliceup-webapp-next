@@ -19,7 +19,7 @@ const links = [
     type: NavItemType.LINK,
   },
   {
-    href: "/restaurant-owners",
+    href: "/restaurant_owners",
     label: "Restaurant Owners",
     type: NavItemType.LINK,
   },
