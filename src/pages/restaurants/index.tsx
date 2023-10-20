@@ -43,7 +43,7 @@ export default function RestaurantsListPage() {
 
         <div className="w-full grid grid-cols-1 items-center justify-center gap-2 py-4">
           <input type="text" placeholder="Search for a restaurant" className="w-full text-black px-4 py-2 border-2 rounded-sm" />
-          <button className="font-bold bg-monza-600 text-white rounded-sm px-4 py-2 w-full">Search</button>
+          <Link href={"/owners_login"} className="font-bold bg-monza-600 text-white rounded-sm px-4 py-2 w-full">Search</Link>
         </div>
 
         <div className="w-full h-full flex flex-col px-2 lg:px-40 ">

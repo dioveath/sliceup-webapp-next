@@ -11,6 +11,7 @@ export default function RestaurantOwners() {
     <main className={`w-full min-h-screen bg-gray-50 ` + gabarito.className}>
       <div id="w-full h-full bg-blue-500 relative">
         <div className="absolute w-full h-full bg-black bg-opacity-60"></div>
+
         <video playsInline autoPlay muted loop poster="" id="bgvideo" className="w-full h-screen object-cover">
           <source src="videos/hero.mp4" type="video/mp4" />
         </video>
@@ -33,6 +34,7 @@ export default function RestaurantOwners() {
             <p className="col-span-1 text-base font-semibold text-white text-center"> 🟢 Anytime Data Access </p>
           </div>
         </div>
+        
       </div>
 
       <div className="flex justify-center items-center py-40">
